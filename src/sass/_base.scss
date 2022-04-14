@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+:root {
+  /* Primary */
+  --clr-cyan: hsl(180, 66%, 49%);
+  --clr-dark-violet: hsl(257, 27%, 26%);
+
+  /* Secondary */
+  --clr-red: hsl(0, 87%, 67%);
+
+  /* Tertiary */
+  --clr-gray: hsl(0, 0%, 75%);
+  --clr-grayish-violet: hsl(257, 7%, 63%);
+  --clr-very-dark-blue: hsl(255, 11%, 22%);
+  --clr-very-dark-violet: hsl(260, 8%, 14%);
+
+  --font-family: 'Poppins', sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: min(100%, 1200px);
+  margin: 0 auto;
+}
+
+.btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.list_item > a {
+  color: var(--clr-gray);
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: var(--clr-cyan);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 1.5rem;
+  color: var(--clr-gray);
+}
+
+input.withoutData {
+  outline: 1px solid red;
+  color: red;
+}
